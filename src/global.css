@@ -13,23 +13,37 @@ header h1 {
     font-weight: 800;
 }
 
-footer {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-footer .copyright {
-    font-size: 14px;
-    color: #333;
+.footer {
+    padding: 15px 0;
     text-align: center;
+    font-size: 16px;
 }
-footer .copyright a {
-    color: #444;
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Ensures items wrap on small screens */
 }
-footer .copyright a:hover {
-    color: #555;
+
+.footer__title {
+    font-weight: bold;
+    color: #333;
 }
-footer .copyright:before {
-    content: '©';
+
+.footer__link {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #005bb5;
+}
+
+.footer__logo {
+    height: 30px;
+    width: auto;
 }
